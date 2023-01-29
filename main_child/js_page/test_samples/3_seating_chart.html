@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Web Study</title>
+		
+		<style>
+			table, td {
+				border: 1px solid #ccc;
+				border-collapse: collapse; /* separate : 표 경계 분리, collapse : 표 경계 충돌 */
+			}
+			td {
+				padding: 5px;
+				font-size: 0.9em;
+			}
+		</style>
+    </head>
+    <body>
+        <script>
+            var peopelCnt, colNum, rowNum;
+            peopleCnt = prompt('전체 입장객 수', '');
+            colNum = prompt('한 줄에 앉는 입장객 수', '');
+            rowNum = parseInt(peopleCnt / colNum) + (peopleCnt % colNum !== 0);
+            document.write(
+                'row : ' + rowNum + ' col : ' + colNum + ' people count : ' + peopleCnt + '<br>'
+            );
+
+            var i, j, seatNumb;
+			document.write("<table>");
+            for (i = 0; i < rowNum; i++) {
+				document.write('<tr>');
+                for (j = 1; j <= colNum; j++) {
+                    seatNumb = i * colNum + j;
+                    if (seatNumb > peopleCnt) break;
+                    document.write('<td>좌석 ' + seatNumb + '</td>');
+                }
+                document.write('</tr>');
+            }
+			document.write("</table>");
+        </script>
+
+        <br /><br />
+        <a href="../js_test.html">BACK</a>
+    </body>
+</html>
