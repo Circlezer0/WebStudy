@@ -1,0 +1,12 @@
+p {
+    color: black;
+}
+h1 {
+    color: green;
+}
+h1 {
+    color: brown !important; /* 우선순위 1등 */
+}
+p {
+    color: blue;
+}

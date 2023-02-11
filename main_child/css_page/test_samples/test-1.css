@@ -1,0 +1,12 @@
+* {
+    font-family: D2Coding;
+}
+
+#css-change-button, #back-button {
+	border: 1px solid #000;				/* 테두리 */
+	border-radius: 0.5rem;				/* 테두리 둥글게 */
+	padding: 5px;						/* 테두리와 내용 사이 여백 */
+	background-color: whitesmoke;		/* 배경색 */
+	color: black;						/* 링크 글자 색 검정 고정 */
+    text-decoration: none;				/* 링크 밑줄 없애기 */
+}

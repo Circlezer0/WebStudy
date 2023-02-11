@@ -1,0 +1,21 @@
+body {
+	font-size: 20px;		/* 전체 글자 크기 */
+}
+
+h1 {
+	font-family: 바탕; 
+	font-size: 3em;			/* 테스트할 때 h1 class accent 제거하기 */
+}
+
+a {
+	font-size: 16px;
+}
+
+.accent {
+	font-size: 150%;
+	font-weight: 800;		/* 글자 굵기 */
+}
+
+.italic {
+	font-style: italic;		/* 글자 스타일 */
+}
