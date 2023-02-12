@@ -1,0 +1,11 @@
+.none {
+	border: 1px solid black;
+}
+.center {
+	border: 1px solid black;
+	text-align: center;	/* 가운데 정렬 */
+}
+.justify {
+	border: 1px solid black;
+	text-align: justify	/* 양쪽 정렬 */
+}
